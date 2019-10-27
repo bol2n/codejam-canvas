@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Codejam Canvas</title>
+</head>
+<body>
+  <header class="header">
+      <nav class="header__navigation">
+        <div class="navigation__btn">
+          <span class="navigation__btn_list"></span>
+          <span class="navigation__btn_list"></span>
+          <span class="navigation__btn_list"></span>
+        </div>
+      </nav>
+      <h1 class="header__title">Codejam-Pallete</h1>
+      <div class="header__menu">
+        <span class="header__menu_list"></span>
+        <span class="header__menu_list"></span>
+        <span class="header__menu_list"></span>
+      </div>
+  </header>
+  <main>
+    <section class="grid-area">
+      <div class="tools">
+        <ul class="tools__list">      
+          <li class="tools__item">
+            <img src="./assets/images/icon-share.png" alt="Paint bucket">
+            <p class="tools__item_text">Paint bucket (p)</p>
+          </li>
+          <li class="tools__item">
+            <img src="./assets/images/icon-upload.png" alt="Choose color">
+            <p class="tools__item_text">Choose color (c)</p>
+          </li>
+          <li class="tools__item">
+            <img src="./assets/images/icon-copy.png" alt="Move">
+            <p class="tools__item_text">Move (m)</p>
+          </li>
+          <li class="tools__item">
+            <img src="./assets/images/icon-transform.png" alt="Transform">
+            <p class="tools__item_text">Transform (t)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pallete">
+        <ul class="pallete__list">
+          <li class="pallete__item">
+            <p class="palette__item_current"></p>
+            <p class="palette__item_color">Current color</p>
+          </li>
+          <li class="pallete__item">
+            <p class="palette__item_prev"></p>
+            <p class="palette__item_color">Prev color</p>
+          </li>
+          <li class="pallete__item">
+            <p class="palette__item_add-1"></p>
+            <p class="palette__item_color">red</p>
+          </li>
+          <li class="pallete__item">
+            <p class="palette__item_add-2"></p>
+            <p class="palette__item_color">blue</p>
+          </li>
+        </ul>
+      </div>
+      <div class="canvas">
+        <canvas class="canvas__item">Обновите браузер</canvas>
+      </div>
+      <div class="switcher">
+        <ul class="switcher__list">
+          <li class="switcher__item">
+            <p class="switcher__item_size">4x4</p>
+          </li>
+          <li class="switcher__item">
+            <p class="switcher__item_size">32x32</p>
+          </li>
+          <li class="switcher__item">
+            <p class="switcher__item_size">image</p>
+          </li>
+        </ul>
+      </div>               
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
